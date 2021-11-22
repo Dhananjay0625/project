@@ -251,6 +251,10 @@ input[type='text'] {
     left: 11%;
 }
 
+.col1 {
+    position: relative;
+}
+
 .col1:first-child::before {
     content: " ";
     display: block;
