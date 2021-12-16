@@ -1,12 +1,17 @@
-@media only screen and (max-width: 1490px) {
+@media only screen and (max-width: 1500px) {
     .cart{
         margin-left: 1200px;
     }
     .main-nav-1{
         margin-left: 630px;
     }
-    .col1 {
-        left: -9%;
-        font-size: 10px;
+    .col1:first-child::before {
+        margin-left: 470px;
+    }
+    .container1 {
+        left: 9%;
+    }
+    .container {
+        right: 5%;
     }
 }

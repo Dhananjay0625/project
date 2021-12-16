@@ -245,10 +245,14 @@ input[type='text'] {
     margin-top: 20px;
 }
 
+.container {
+    position: relative;
+}
+
 .container1{
     display: flex;
     position: absolute;
-    left: 11%;
+    left: 15%;
 }
 
 .col1 {
@@ -264,7 +268,7 @@ input[type='text'] {
     height: 300px;
     opacity: 0.4;
     margin-top: -40px;
-    margin-left: 550px;
+    margin-left: 500px;
 }
 
 .create {
@@ -287,6 +291,7 @@ input[type='text'] {
 .col {
     padding: 100px;
     margin-right: auto;
+    position: relative;
 }
 
 .cust{
