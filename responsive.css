@@ -13,5 +13,20 @@
     }
     .container {
         right: 5%;
+    } 
+    .account h1::after {
+        width: 1200px;
     }
+}
+
+@media only screen and (max-width: 1394px) {
+    }
+    .col1:first-child::before {
+        margin-left: 460px;
+    } 
+}
+
+
+@media only screen and (max-width: 1389px) {
+
 }
