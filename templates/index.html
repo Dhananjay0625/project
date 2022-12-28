@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WELCOME TO ELITE FURNISHERS</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="responsive.css">
+    {% load static %}
+    <link rel="stylesheet" href="/static/index.css">
 </head>
 <body>
     <main>
@@ -27,7 +27,8 @@
     
     <main>
         <div>
-            <img class="logo" src="logo.jpeg" alt="logo">
+            {% load static %}
+            <img class="logo" src="{% static 'logo.jpg' %}" alt="logo">
         </div>
         
         <div class="search">
@@ -124,9 +125,12 @@
             <div class="col col2">
                 <h2 class="cust1">returning customers</h2>
                 <p class="para3">Please log in to your account.</p>
+                <form method="POST">
+                    {% csrf_token %}
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
                 <button class="btn"><ion-icon class="login1" name="log-in-outline"></ion-icon>LOG IN MY ACCOUNT</button>
+                </form>
             </div>
 
         </div>
@@ -162,5 +166,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
